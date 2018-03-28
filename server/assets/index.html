@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>标题</title>
+		<!-- <link rel="stylesheet" href="index.css"> -->
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				overflow: hidden;
+				/*也影响层级关系*/
+			}
+			.top-bar {
+				width: 100%;
+				position: fixed;
+				height: 40px;
+				top: 0px;
+				left: 0px;
+				background: red;
+				z-index: 1;
+			}
+			.container {
+				height: 500px;
+				margin-top: 44px;
+				overflow: auto;
+				border: 1px solid;
+				-webkit-overflow-scrolling:touch
+			}
+			.content {
+				padding-top: 42px;
+				height: 2000px;
+				background: #e5e5e5;
+			}
+		</style>	
+	</head>
+<!-- 
+0. 加速属性容器层级会提升
+
+1. fixed 容器在 -webkit-overflow-scrolling:touch容器外面的情况
+	1.1，增加fixed 容器 z-index， 使fixed容器始终在上面
+	1.2 body overflow:hidden 情况
+
+
+2. ***********************************************在里面
+	应用加速属性的容器（容器A）在触发到弹性效果时候，会有一个类似overflow:hidden的效果，形成一个封闭的矩形区域，该区域之外的不可见。容器A内部的容器B（应用fixed属性的容器）由于相对于浏览器窗口定位，会脱离到容器A之外，被hidden。
+ -->
+	<body>
+		
+		
+		<div class="container">
+		<div class="top-bar">顶部工具条</div>
+			<div class="content">
+			这里开始内容
+			<br />
+			这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+			<br />
+			这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						<br />
+			这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						<br />
+			这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						<br />
+			这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						<br />
+			这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+						这里开始内容
+			<br />
+
+			</div>
+
+		</div>
+		
+		
+	</body>
+</html>
