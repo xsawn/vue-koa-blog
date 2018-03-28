@@ -1,0 +1,29 @@
+{
+  "name": "vue-koa-blog",
+  "version": "0.0.1",
+  "description": "blog, vue, blog, tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxShawn/vue-koa-blog.git"
+  },
+  "keywords": [
+    "vue",
+    "koa",
+    "node",
+    "blog"
+  ],
+  "author": "Shawn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xxShawn/vue-koa-blog/issues"
+  },
+  "homepage": "https://github.com/xxShawn/vue-koa-blog#readme",
+  "dependencies": {
+    "koa": "^2.5.0",
+    "vue": "^2.5.16"
+  }
+}
